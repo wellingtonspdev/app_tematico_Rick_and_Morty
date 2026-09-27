@@ -265,15 +265,15 @@ export const EstilosTela2 = StyleSheet.create({
     justifyContent: 'space-between',
     backgroundColor: Cores.surfaceGlassSoft,
     borderRadius: Tokens.radius.xl,
-    padding: 16,
+    padding: width < 360 ? 12 : 16,
     borderWidth: 1,
     borderColor: Cores.borderCyan,
     marginVertical: 14,
     overflow: 'hidden',
   },
   rickImagem: {
-    width: 150,
-    height: 190,
+    width: Math.min(width * 0.36, 140),
+    height: Math.min(width * 0.48, 185),
     resizeMode: 'contain',
   },
   rickHeaderInfo: {
@@ -327,7 +327,7 @@ export const EstilosTela3 = StyleSheet.create({
     justifyContent: 'space-between',
     backgroundColor: Cores.surfaceGlassSoft,
     borderRadius: Tokens.radius.xl,
-    padding: 16,
+    padding: width < 360 ? 12 : 16,
     borderWidth: 1,
     borderColor: Cores.borderYellow,
     marginVertical: 14,
@@ -338,8 +338,8 @@ export const EstilosTela3 = StyleSheet.create({
     paddingRight: 12,
   },
   mortyImagem: {
-    width: 140,
-    height: 190,
+    width: Math.min(width * 0.34, 135),
+    height: Math.min(width * 0.48, 185),
     resizeMode: 'contain',
   },
   cardMorty: {
@@ -382,7 +382,7 @@ export const EstilosTela3 = StyleSheet.create({
 export const EstilosTela4 = StyleSheet.create({
   cidadelaCard: {
     width: '100%',
-    height: 220,
+    height: width < 360 ? 190 : 220,
     borderRadius: Tokens.radius.xl,
     overflow: 'hidden',
     position: 'relative',
