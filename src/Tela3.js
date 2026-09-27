@@ -12,8 +12,9 @@ import {
   EstilosGlobais,
   EstilosTela3,
 } from './Estilo';
+import { IMAGENS } from './assets';
 
-const MORTY_IMG = require('../assets/morty.png');
+const MORTY_IMG = IMAGENS.morty;
 
 export default function Tela3({ navigation }) {
   return (

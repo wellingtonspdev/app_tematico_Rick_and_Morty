@@ -14,10 +14,10 @@
 
 Os assets selecionados são indicados para uso acadêmico/não comercial. Antes de qualquer reutilização comercial ou publicação fora do contexto acadêmico, revisar individualmente a licença e a titularidade de cada imagem.
 
-## Tratamento
+## Tratamento e Distribuição Universal
 
-- Não remover transparência dos personagens/portal.
-- Não converter para JPG.
-- Evitar upscale artificial.
-- Se necessário, reduzir dimensões mantendo PNG.
-- Não embutir URL remota no app; armazenar em `assets/`.
+- **Armazenamento de Alta Resolução Original:** Preservado permanentemente na tag Git `original-png-assets`.
+- **Compatibilidade Universal com Expo Snack:** Para evitar falha no endpoint `/v2/snack/uploadAsset` do importador de Git do Expo Snack (rejeição de payloads binários multipart), os assets são distribuídos via módulo de alta fidelidade embutido [`src/assets.js`](src/assets.js).
+- Transparência alfa original dos personagens e do portal 100% preservada.
+- Renderização offline instantânea e sem latência de rede.
+

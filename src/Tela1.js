@@ -16,9 +16,10 @@ import {
   EstilosPortal,
   EstilosTela1,
 } from './Estilo';
+import { IMAGENS } from './assets';
 
-const HERO_IMG = require('../assets/universo-rick-morty-portal.png');
-const PORTAL_IMG = require('../assets/portal.png');
+const HERO_IMG = IMAGENS.universo;
+const PORTAL_IMG = IMAGENS.portal;
 
 export default function Tela1({ navigation }) {
   const [estaAtivando, setEstaAtivando] = useState(false);

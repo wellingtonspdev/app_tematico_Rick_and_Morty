@@ -12,8 +12,9 @@ import {
   EstilosGlobais,
   EstilosTela2,
 } from './Estilo';
+import { IMAGENS } from './assets';
 
-const RICK_IMG = require('../assets/rick.png');
+const RICK_IMG = IMAGENS.rick;
 
 export default function Tela2({ navigation }) {
   return (

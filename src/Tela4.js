@@ -16,9 +16,10 @@ import {
   EstilosPortal,
   EstilosTela4,
 } from './Estilo';
+import { IMAGENS } from './assets';
 
-const CIDADELA_IMG = require('../assets/multiverso-cidadela.png');
-const PORTAL_IMG = require('../assets/portal.png');
+const CIDADELA_IMG = IMAGENS.cidadela;
+const PORTAL_IMG = IMAGENS.portal;
 
 export default function Tela4({ navigation }) {
   const rotacaoPortal = useRef(new Animated.Value(0)).current;
