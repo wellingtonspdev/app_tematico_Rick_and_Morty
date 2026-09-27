@@ -144,6 +144,14 @@ npx expo run:ios
 
 ---
 
+## Production · GitHub Pages
+
+The application is configured for continuous production deployment via **GitHub Actions**:
+- **Production URL:** [https://wellingtonspdev.github.io/app_tematico_Rick_and_Morty/](https://wellingtonspdev.github.io/app_tematico_Rick_and_Morty/)
+- **Workflow:** `.github/workflows/deploy-pages.yml` (static export with `npx expo export -p web` and deployment using `actions/deploy-pages`).
+
+---
+
 ## Expo Snack
 
 - **Status:** `Prepared for Expo Snack validation`

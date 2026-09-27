@@ -5,6 +5,9 @@
     "version": "1.0.0",
     "orientation": "portrait",
     "userInterfaceStyle": "dark",
-    "backgroundColor": "#06110D"
+    "backgroundColor": "#06110D",
+    "experiments": {
+      "baseUrl": "/app_tematico_Rick_and_Morty"
+    }
   }
 }
